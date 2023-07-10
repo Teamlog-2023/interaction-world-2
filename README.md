@@ -5,8 +5,10 @@
 -  디렉토리 구조
    ```
    project
-       - html
-       - css
-       - js
-       - img
+       - public(folder)
+         - css(folder)
+         - js(folder)
+         - images(folder)
+       - html(file)
+       - etc
    ```
