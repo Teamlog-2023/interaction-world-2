@@ -117,7 +117,7 @@
             }
         }
 
-        button {
+        /* button {
             padding: 10px 20px;
             background-color: rgb(155, 31, 66);
             color: #FFF;
@@ -132,6 +132,10 @@
         button:hover {
             background-color: #e48080;
         }
+
+        button:active {
+        transform: translateY(2px);
+        } */
 
         input[type="color"] {
             margin-top: 10px;
@@ -158,15 +162,68 @@
             text-align: center;
         }
 
-        .content-container {
+        /* button {
             margin-bottom: 20px;
+            box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	        background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	        background-color:#fc8d83;
+	        border-radius:6px;
+	        border:1px solid #d83526;
+	        display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:17px;
+            font-weight:bold;
+            padding:10px 32px;
+            text-decoration:none;
+            text-shadow:0px 2px 0px #b23e35;
         }
+
+        button {
+            background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+            background-color:#e4685d;
+        }
+        button {
+            position:relative;
+            top:1px;
+        } */
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+
+
+        button {
+            box-shadow: 3px 4px 0px 0px #8a2a21;
+            background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+            background-color:#c62d1f;
+            border-radius:18px;
+            border:1px solid #d02718;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:'Noto Sans KR', sans-serif;
+            font-weight: 900;
+            font-size:17px;
+            padding:7px 25px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #810e05;
+        }
+        button:hover {
+            background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+            background-color:#f24437;
+        }
+        button:active {
+            position:relative;
+            top:1px;
+        }
+
+        
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="content-container">
+        <div class="TeamLog">
             <h1 id="teamLog">
                 <span>T</span>
                 <span>e</span>
@@ -182,10 +239,9 @@
         <div class="content-container">
             <input type="color">
             <button onclick="changeBackgroundColor()">색깔 섞기 마법!</button>
-        </div>
-        <div class="content-container">
-            <input type="text" id="inputText">
+            <!-- <input type="text" id="inputText"> -->
             <button onclick="changeButtonText()">텍스트 변경</button>
+
         </div>
     </div>
 
@@ -196,7 +252,7 @@
         }
         
         function changeButtonText() {
-            var inputText = document.getElementById("inputText").value;
+            var inputText = prompt("텍스트를 입력하세요!")
             var h1 = document.getElementById("teamLog");
             h1.innerHTML = "";
             
