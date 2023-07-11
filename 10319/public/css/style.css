@@ -1,0 +1,211 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    display: flex; /*수평 중앙 정렬*/
+    justify-content: center; /*가로 중앙*/
+    align-items: center; /*수직 정렬을 세로 중앙으로*/
+    background: linear-gradient(to right, rgb(160, 12, 12), rgb(160, 12, 12));
+}
+
+h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-family: 'Titan One', cursive;
+    font-size: 80px;
+    color: #FFF;
+    text-shadow: 0 1px 0 #CCC, /*수평, 수직, 그림자 번짐*/
+        0 2px 0 #CCC,
+        0 3px 0 #CCC,
+        0 4px 0 #CCC,
+        0 5px 0 #CCC,
+        0 6px 0 transparent,
+        0 7px 0 transparent,
+        0 8px 0 transparent,
+        0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, .4);
+}
+
+h1 span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: .4s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: .5s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: .6s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: .7s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: .8s;
+}
+
+h1 span:nth-child(10) {
+    animation-delay: .9s;
+}
+
+h1 span:nth-child(11) {
+    animation-delay: .10s;
+}
+
+h1 span:nth-child(12) {
+    animation-delay: .11s;
+}
+
+h1 span:nth-child(13) {
+    animation-delay: .12s;
+}
+
+h1 span:nth-child(14) {
+    animation-delay: .13s;
+}
+
+h1 span:nth-child(15) {
+    animation-delay: .14s;
+}
+
+h1 span:nth-child(16) {
+    animation-delay: .15s;
+}
+
+h1 span:nth-child(17) {
+    animation-delay: .16s;
+}
+
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #CCC,
+            0 2px 0 #CCC,
+            0 3px 0 #CCC,
+            0 4px 0 #CCC,
+            0 5px 0 #CCC,
+            0 6px 0 #CCC,
+            0 7px 0 #CCC,
+            0 8px 0 #CCC,
+            0 9px 0 #CCC,
+            0 50px 25px rgba(0, 0, 0, .2);
+    }
+}
+
+/* button {
+    padding: 10px 20px;
+    background-color: rgb(155, 31, 66);
+    color: #FFF;
+    border: black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e48080;
+}
+
+button:active {
+transform: translateY(2px);
+} */
+
+input[type="color"] {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* button {
+    margin-bottom: 20px;
+    box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+    background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+    background-color:#fc8d83;
+    border-radius:6px;
+    border:1px solid #d83526;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    font-weight:bold;
+    padding:10px 32px;
+    text-decoration:none;
+    text-shadow:0px 2px 0px #b23e35;
+}
+
+button {
+    background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+    background-color:#e4685d;
+}
+button {
+    position:relative;
+    top:1px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+
+
+button {
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    background-color:#c62d1f;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+}
+button:hover {
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    background-color:#f24437;
+}
+button:active {
+    position:relative;
+    top:1px;
+}
+
